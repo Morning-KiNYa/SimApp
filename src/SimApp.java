@@ -142,9 +142,9 @@ public class SimApp {
 		events.add(Squid1);
 		// 住宅地を建設したことがある場合のみ発生
 		if (mycity.housing == true) {
-			Event Ufo2 = new Event("UFO襲来！街を気に入った宇宙人が故郷の仲間を連れてきた", 50000, 25000);
+			Event Ufo2 = new Event("UFO襲来！……と思ったら、\n街を気に入った宇宙人が故郷の仲間を連れてきた", 50000, 25000);
 			events.add(Ufo2);
-			Event Ranking = new Event("住みやすい街ランキング1位に選ばれる！", 0, 10000);
+			Event Ranking = new Event("住みやすい街ランキング1位に選ばれる！", 0, 20000);
 			events.add(Ranking);
 		}
 		// 商業施設を建設したことがある場合のみ発生
