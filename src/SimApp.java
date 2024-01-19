@@ -208,6 +208,9 @@ public class SimApp {
 	}
 
 	public static void displayTown(City mycity) {
+		if (mycity.population < 0) {
+			mycity.population = 0;
+		}
 		System.out.println("現在の総資金：" + mycity.money + "G 現在の総人口：" + mycity.population + "人");
 	}
 
