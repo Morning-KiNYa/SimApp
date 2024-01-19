@@ -151,12 +151,16 @@ public class SimApp {
 		if (mycity.commercial == true) {
 			Event Tonde2 = new Event("ダサい街ランキング1位に選ばれるも、それを逆手にとった映画\n「飛んで " + mycity.name + "」が大ヒット！", 30000, 10000);
 			events.add(Tonde2);
+			Event Bread = new Event("街のパン屋さんが作った「5円パン」がSNSでバズる！",20000,20000);
+			events.add(Bread);
 		}
 		// 工場を建設したことがある場合のみ発生
 		if (mycity.industry == true) {
 			Event Virus2 = new Event("新型の感染症が流行し、対応に追われるも\n通称「" + mycity.playerName + "ノマスク」を配布し、感染拡大を最小限に食い止める",
 					-30000, 0);
 			events.add(Virus2);
+			Event Rocket = new Event("街の工場で製造されたネジがロケットの部品に採用される",20000,20000);
+			events.add(Rocket);
 		}
 		// 学校を建設したことがある場合のみ発生
 		if (mycity.school == true) {
@@ -169,7 +173,7 @@ public class SimApp {
 		}
 		// 公園を建設したことがある場合のみ発生
 		if (mycity.park == true) {
-			Event Squid2 = new Event("駅前に以下のオブジェを設置するも市民から不評……\nしかしSNSでは大バズリし、観光スポットに！", 20000, -5000);
+			Event Squid2 = new Event("駅前にイカのオブジェを設置するも市民から不評……\nしかしSNSでは大バズリし、観光スポットに！", 20000, -5000);
 			events.add(Squid2);
 			Event Marathon = new Event(mycity.name + "出身のマラソン選手が金メダルを獲得！\n凱旋パレードにたくさんの人が集まる", 20000, 20000);
 			events.add(Marathon);
